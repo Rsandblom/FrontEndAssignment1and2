@@ -1,0 +1,169 @@
+body{
+    font-family: sans-serif;
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 70px auto 100px;
+    grid-template-columns: 256px 256px 256px 256px;
+    border: solid black 1px;
+    
+}
+
+header {
+    grid-row: 1 /2;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-areas: 
+        'h1 h1 navul navul navul a a';
+    background-color: orange;
+    border: solid black 1px;
+}
+header h1 {
+    grid-area: h1;
+    padding: 10px;
+    margin: 0px;
+    border: solid black 1px;
+}
+header nav {
+    grid-area: navul;
+    margin: 0px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    margin: 0px;
+    height: 100%;
+    border: solid black 1px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+.navlink{
+    width: 150px;
+    padding-top: 20px;
+    border: solid black 1px;
+    background-color: steelblue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navpagetoggle {
+    grid-area: a;
+    padding-top: 20px;
+    padding-left: 60px;
+    border: solid black 1px;
+    background-color: lightsteelblue;
+
+}
+section {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-areas: 
+        'secheadline secheadline'
+        'secparagraph secparagraph' 
+        'articleleft articleright';
+
+    border: solid black 1px;
+    background-color: khaki;
+}
+
+section h2 {
+    grid-area: secheadline;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+    width: 200px;
+}
+section p {
+    grid-area: secparagraph;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+#sectionarticles {
+    grid-column: 1 / 4;
+}
+#sectionlogin {
+    grid-column: 1 / 5;
+}
+
+article {
+    grid-area: article;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+#articleleft {
+    grid-area:  articleleft;
+}
+#articleright {
+    grid-area: articleright;
+}
+
+aside {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    border: solid black 1px;
+    background-color: rgb(196, 213, 160);
+    
+}
+aside h2 {
+    margin: 10px;
+    margin-bottom: -10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+aside ul {
+    background-color: lightgray;
+    margin: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+#loginsecheadline {
+    width: 200px;
+    grid-column: 2 / 3;
+    margin-left:  0px;
+}
+form {
+    width: 300px;
+    grid-column: 2 / 3;
+    margin-bottom: 50px;
+    background-color: lightgray;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form input[type=text] {
+    width: 200px;
+    margin: 5px;
+}
+form input[type=reset], input[type=submit] {
+    background-color: blue;
+    border: none;
+    border-radius: 5px;;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: solid black ;
+    background-color: rgb(112, 48, 160);
+}
+#loginh1headline {
+    text-transform: uppercase;
+}
