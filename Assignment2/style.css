@@ -144,11 +144,21 @@ form input[type=text] {
     width: 200px;
     margin: 5px;
 }
-form input[type=reset], input[type=submit] {
+form  input[type=submit] {
     background-color: blue;
     border: none;
     border-radius: 5px;;
     color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+form input[type=reset] {
+    border: solid red 1px;
+    border-radius: 5px;;
+    color: red;
     padding: 8px 16px;
     text-decoration: none;
     margin: 4px 2px;
@@ -164,6 +174,6 @@ footer {
     border: solid black ;
     background-color: rgb(112, 48, 160);
 }
-#loginh1headline {
+#loginpageheader {
     text-transform: uppercase;
 }
